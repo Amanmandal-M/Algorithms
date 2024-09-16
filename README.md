@@ -1,4 +1,4 @@
-<h1 style="text-align:center">Algorithms</h1>
+<h1  align="center" >Algorithms</h1>
 
 
 # Sorting Algorithm
