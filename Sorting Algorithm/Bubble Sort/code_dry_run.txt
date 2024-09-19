@@ -1,0 +1,42 @@
+Dry Run Explanation:
+
+Array: [64, 34, 25, 12, 22, 11, 90]
+
+Pass 1:
+- Compare 64 and 34 → Swap → [34, 64, 25, 12, 22, 11, 90]
+- Compare 64 and 25 → Swap → [34, 25, 64, 12, 22, 11, 90]
+- Compare 64 and 12 → Swap → [34, 25, 12, 64, 22, 11, 90]
+- Compare 64 and 22 → Swap → [34, 25, 12, 22, 64, 11, 90]
+- Compare 64 and 11 → Swap → [34, 25, 12, 22, 11, 64, 90]
+- Compare 64 and 90 → No Swap → [34, 25, 12, 22, 11, 64, 90]
+- At the end of Pass 1, the largest number 90 is in its correct position.
+
+Pass 2:
+- Compare 34 and 25 → Swap → [25, 34, 12, 22, 11, 64, 90]
+- Compare 34 and 12 → Swap → [25, 12, 34, 22, 11, 64, 90]
+- Compare 34 and 22 → Swap → [25, 12, 22, 34, 11, 64, 90]
+- Compare 34 and 11 → Swap → [25, 12, 22, 11, 34, 64, 90]
+- Compare 34 and 64 → No Swap → [25, 12, 22, 11, 34, 64, 90]
+- At the end of Pass 2, the second largest number 64 is in its correct position.
+
+Pass 3:
+- Compare 25 and 12 → Swap → [12, 25, 22, 11, 34, 64, 90]
+- Compare 25 and 22 → Swap → [12, 22, 25, 11, 34, 64, 90]
+- Compare 25 and 11 → Swap → [12, 22, 11, 25, 34, 64, 90]
+- Compare 25 and 34 → No Swap → [12, 22, 11, 25, 34, 64, 90]
+- At the end of Pass 3, the third largest number 34 is in its correct position.
+
+Pass 4:
+- Compare 12 and 22 → No Swap → [12, 22, 11, 25, 34, 64, 90]
+- Compare 22 and 11 → Swap → [12, 11, 22, 25, 34, 64, 90]
+- Compare 22 and 25 → No Swap → [12, 11, 22, 25, 34, 64, 90]
+- At the end of Pass 4, the fourth largest number 25 is in its correct position.
+
+Pass 5:
+- Compare 12 and 11 → Swap → [11, 12, 22, 25, 34, 64, 90]
+- Compare 12 and 22 → No Swap → [11, 12, 22, 25, 34, 64, 90]
+- At the end of Pass 5, the fifth largest number 22 is in its correct position.
+
+Pass 6:
+- Compare 11 and 12 → No Swap → [11, 12, 22, 25, 34, 64, 90]
+- Now the array is fully sorted: [11, 12, 22, 25, 34, 64, 90].

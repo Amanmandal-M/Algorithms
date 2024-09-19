@@ -1,20 +1,22 @@
+let arr = [64, 34, 25, 12, 22, 11, 90];
+bubbleSort(arr);
+
 function bubbleSort(arr) {
     let n = arr.length;
-    // Traverse through all elements
     for (let i = 0; i < n - 1; i++) {
-        // Last i elements are already sorted
         for (let j = 0; j < n - i - 1; j++) {
-            // Swap if the element is greater than the next
+            // Log current comparison
+            console.log(`Comparing ${arr[j]} and ${arr[j + 1]}`);
             if (arr[j] > arr[j + 1]) {
+                // Log swap
+                console.log(`Swapping ${arr[j]} and ${arr[j + 1]}`);
                 let temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
         }
+        // Log array state after each pass
+        console.log(`Array after pass ${i + 1}:`, arr);
     }
 }
 
-// Example usage:
-let arr = [64, 34, 25, 12, 22, 11, 90];
-bubbleSort(arr);
-console.log("Sorted array:", arr);
