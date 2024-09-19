@@ -1,6 +1,3 @@
-arr = [64, 34, 25, 12, 22, 11, 90]
-bubbleSort(arr)
-
 def bubbleSort(arr):
     n = len(arr)
     for i in range(n - 1):
@@ -13,4 +10,7 @@ def bubbleSort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
         # Log array state after each pass
         print(f"Array after pass {i + 1}: {arr}")
+        
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubbleSort(arr)        
 
