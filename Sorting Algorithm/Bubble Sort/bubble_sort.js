@@ -10,9 +10,14 @@ function bubbleSort(arr) {
             if (arr[j] > arr[j + 1]) {
                 // Log swap
                 console.log(`Swapping ${arr[j]} and ${arr[j + 1]}`);
-                let temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                
+                // -----> Swapping Values (Initializing Way) <-----
+                // let temp = arr[j];
+                // arr[j] = arr[j + 1];
+                // arr[j + 1] = temp;
+
+                // -----> Swapping Values (Destructuring Way) <-----
+                [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
             }
         }
         // Log array state after each pass
