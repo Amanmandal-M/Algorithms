@@ -1,0 +1,24 @@
+Dry Run Explanation:
+
+Array: [64, 25, 12, 22, 11]
+
+Pass 1:
+- Current unsorted part: [64, 25, 12, 22, 11]
+- Minimum element: 11
+- Swap 11 with 64 → [11, 25, 12, 22, 64]
+
+Pass 2:
+- Current unsorted part: [25, 12, 22, 64]
+- Minimum element: 12
+- Swap 12 with 25 → [11, 12, 25, 22, 64]
+
+Pass 3:
+- Current unsorted part: [25, 22, 64]
+- Minimum element: 22
+- Swap 22 with 25 → [11, 12, 22, 25, 64]
+
+Pass 4:
+- Current unsorted part: [25, 64]
+- No swap needed, the array is already sorted.
+
+Final sorted array: [11, 12, 22, 25, 64].
