@@ -42,4 +42,5 @@ Best Case:         O(n)   (when the array is already sorted, just one pass)
 Average Case:      O(n^2) (needs multiple passes through the array)
 Worst Case:        O(n^2) (when the array is in reverse order)
 
-### Space Complexity:  O(1)   (It is an in-place sorting algorithm, requiring no extra space.)
+### Space Complexity:  
+O(1) (It is an in-place sorting algorithm, requiring no extra space.)
