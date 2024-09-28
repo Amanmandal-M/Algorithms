@@ -1,0 +1,43 @@
+Selection Sort - Full Explanation
+
+### Concept:
+Selection Sort is an in-place comparison-based sorting algorithm. The idea is to divide the array into two parts: a sorted and an unsorted part. The algorithm repeatedly selects the smallest (or largest, depending on sorting order) element from the unsorted part and swaps it with the first unsorted element. This process continues until the entire array is sorted.
+
+### Steps:
+1. Start with the first element and assume it's the minimum.
+2. Iterate through the unsorted part of the array to find the smallest element.
+3. Swap this smallest element with the first unsorted element.
+4. Move the boundary between sorted and unsorted parts by one element.
+5. Repeat the process until the entire array is sorted.
+
+### Example Walkthrough:
+For an array: [64, 25, 12, 22, 11]
+
+Pass 1:
+- Start with the entire array.
+- Find the minimum element in the unsorted part (11 in this case).
+- Swap it with the first element → [11, 25, 12, 22, 64].
+
+Pass 2:
+- Now, the sorted part contains [11], and the unsorted part is [25, 12, 22, 64].
+- Find the minimum element in the unsorted part (12).
+- Swap it with the first element of the unsorted part (25) → [11, 12, 25, 22, 64].
+
+Pass 3:
+- The sorted part is [11, 12], and the unsorted part is [25, 22, 64].
+- Find the minimum element in the unsorted part (22).
+- Swap it with 25 → [11, 12, 22, 25, 64].
+
+Pass 4:
+- The sorted part is [11, 12, 22], and the unsorted part is [25, 64].
+- No swaps needed as the array is already sorted → [11, 12, 22, 25, 64].
+
+### Time Complexity:
+Best Case: O(n^2)
+Average Case: O(n^2)
+Worst Case: O(n^2)
+
+Even if the array is already sorted, the algorithm still makes O(n^2) comparisons.
+
+### Space Complexity:
+O(1) (It's an in-place sorting algorithm that does not require extra space.)
