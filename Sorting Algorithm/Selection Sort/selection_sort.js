@@ -8,15 +8,15 @@ function selectionSort(arr) {
 
         // Find the actual minimum element in the unsorted part
         for (let j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j;
-            }
+            arr[j] < arr[minIndex] ? minIndex = j : null;
         }
 
         // Swap the found minimum with the first unsorted element
-        let temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
+        // let temp = arr[i];
+        // arr[i] = arr[minIndex];
+        // arr[minIndex] = temp;
+
+        [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]]
     }
 }
 
